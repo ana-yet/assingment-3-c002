@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nature Platter</title>
+    <title>Grocery Shop</title>
     <!-- Fonts CDN-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -73,11 +73,12 @@
           </button>
         </div>
       </nav>
+      <hr class="border-t-4 lg:hidden border-green-600" />
       <!-- Banner section -->
       <div class="my-24 lg:w-9/12 lg:mx-auto">
         <!-- Banner text -->
         <div class="lg:w-[850px] lg:mx-auto mb-10 space-y-4 lg:space-y-8">
-          <h1 class="text-7xl text-center">
+          <h1 class="text-7xl text-center animate-bounce font-bold">
             Freshness
             <span class="text-green-600"
               >You Can <br />
@@ -369,7 +370,7 @@
       </section>
 
       <!-- Offers section -->
-      <section class="lg:w-9/12 w-11/12 mx-auto my-40 mb-[400px] lg:mb-[350px]">
+      <section class="lg:w-9/12 w-11/12 mx-auto my-40">
         <h2 class="text-4xl text-green-600 lg:mb-16 mb-11">Arrival & Offers</h2>
         <!-- container -->
         <div class="flex lg:flex-row flex-col gap-3 lg:gap-6">
@@ -383,7 +384,9 @@
               >
                 Cook Exotic Dishes
               </button>
-              <h2 class="text-4xl text-white">UP to 20% OFF</h2>
+              <h2 class="text-4xl text-white">
+                UP to <span class="font-bold">20% OFF</span>
+              </h2>
             </div>
             <!-- image -->
             <div class="pt-7">
@@ -400,11 +403,107 @@
               >
                 World’s No.1 Rice
               </button>
-              <h2 class="text-4xl text-white">UP to 20% OFF</h2>
+              <h2 class="text-4xl text-white">
+                UP to <span class="font-bold">20% OFF</span>
+              </h2>
             </div>
             <!-- image -->
             <div class="pt-7 pr-3">
               <img src="./assets/india-gate-mock-up.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Faq section -->
+      <section
+        class="lg:w-full my-40 mb-[400px] lg:mb-[350px] bg-gradient-to-t to-green-50 from-green-100 py-10"
+      >
+        <!-- content -->
+        <div class="w-11/12 lg:w-9/12 mx-auto">
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is Grocery Shop?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Grocery Shop is an online vegetable grocery store that delivers
+                fresh, high-quality vegetables to your doorstep.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              Do you sell organic vegetables?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Yes! We offer a variety of organic and chemical-free vegetables.
+                You can find them in our "Organic" section.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              How do I place an order?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Simply browse our website, add vegetables to your cart, and
+                proceed to checkout. You can select your preferred delivery time
+                before completing the order.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              What are your delivery areas?
+            </div>
+            <div class="collapse-content">
+              <p>
+                We currently deliver to Pakistan. If you're unsure, enter your
+                zip code at checkout to check availability.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              How long does delivery take?
+            </div>
+            <div class="collapse-content">
+              <p>
+                We offer same-day or next-day delivery based on your location.
+                You can also schedule a preferred delivery time during checkout.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              What payment methods do you accept?
+            </div>
+            <div class="collapse-content">
+              <p>
+                We accept cash on delivery, credit/debit cards, UPI, and online
+                wallets.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              Can I cancel or modify my order after placing it?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Yes, you can modify or cancel your order within 5m by contacting
+                our support team.
+              </p>
             </div>
           </div>
         </div>
@@ -424,16 +523,14 @@
           <img src="./assets/vegetable-busket.png" alt="" />
         </div>
         <!-- text content -->
-        <div
-          class="lg:space-y-4 space-y-2 text-center lg:text-start space-x-2 lg:pr-10"
-        >
+        <div class="lg:space-y-4 space-y-2 text-center lg:text-start lg:pr-10">
           <h2 class="lg:text-4xl text-2xl font-semibold">Get Grocery News!</h2>
           <p class="lg:text-2xl text-xl">
             Exclusive training tips, ticks, product deals and more.
           </p>
           <br />
           <input
-            class="outline-none w-3/4 h-12 p-4 rounded-md"
+            class="outline-none w-full lg:w-3/4 h-12 p-4 rounded-md"
             type="email"
             name=""
             id=""
